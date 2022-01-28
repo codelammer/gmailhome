@@ -43,6 +43,10 @@ html, body{
 main{
     overflow-y: scroll;
 
+    *{
+        user-select: none;
+    }
+
     .fixed-header{
         background-color: white;
         border-radius: 0.5rem;
@@ -52,9 +56,9 @@ main{
         padding: 0.5rem;
 
         position: fixed;
-        top: 0.8rem;
-        right: 0.8rem;
-        left: 0.8rem;
+        top: 1.3rem;
+        right: 1.3rem;
+        left: 1.3rem;
         z-index: 99;
 
         *{
@@ -86,14 +90,14 @@ main{
 
         > p{
             color: $text;
-            padding: 0.8rem;
+            padding: 1.3rem;
         }
 
         .grouped-mails{
             // border: 1px solid blue;
             border-radius: 0.5rem;
             @include flexCentered();
-            padding: 0.8rem 0.8rem;
+            padding: 1rem 1.3rem;
 
             &:hover{
                 background-color: $Light;
@@ -161,7 +165,7 @@ main{
         .mail{
 
             @include flexCentered();
-            padding: 0.8rem 0.8rem;
+            padding: 1rem 1.3rem;
 
             &:hover{
                 background-color: $Light;
